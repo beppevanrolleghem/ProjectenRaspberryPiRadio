@@ -1,0 +1,35 @@
+import MidiGenerator as m
+import sys
+import os
+'''
+m.MakeMidiFile("Piano", 280, 1)
+m.AddChord( [No(F, 4), No(C, 5)], 1, 100)
+m.AddChord( [No(F, 4), No(C, 5)], 1, 100)
+m.AddChord( [No(F, 4), No(C, 5)], 1, 100)
+m.AddChord( [No(F, 4), No(C, 5)], 1, 100)
+m.AddPause(1)
+m.AddChord( [No(Eb, 4), No(C, 4), No(Ab, 4)], 2, 100)
+m.AddChord( [No(D, 4),No(F, 4),No(Bb, 4)], 2, 100)
+m.AddChord( [No(E, 4), No(C, 5)], 1, 100)
+m.AddPause(1)
+m.AddChord( [No(D, 4), No(Bb, 4)], 1, 100)
+m.AddChord( [No(E, 4), No(C, 5)], 4, 100)
+m.AddPause(6)
+m.ExportMidi("FFVictoryTheme")
+'''
+
+m.MakeMidiFile("Piano", 280, 1)
+m.AddChord(['F4' ,'C5'], 1, 100)
+m.AddChord(['F4' ,'C5'], 1, 100)
+m.AddChord(['F4' ,'C5'], 1, 100)
+m.AddChord(['F4' ,'C5'], 1, 100)
+m.AddPause(1)
+m.AddChord( ['Eb4', 'C4', 'Ab4'], 2, 100)
+m.AddChord( ['D4','F4','Bb4'], 2, 100)
+m.AddChord( ['E4', 'C5'], 1, 100)
+m.AddPause(1)
+m.AddChord( ['D4', 'Bb4'], 1, 100)
+m.AddChord( ['E4', 'C5'], 4, 100)
+m.AddPause(6)
+m.AddNote('Solb6',4,100)
+m.ExportMidi("FFVictoryTheme")

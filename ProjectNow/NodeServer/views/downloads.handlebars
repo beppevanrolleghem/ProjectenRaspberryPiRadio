@@ -1,0 +1,38 @@
+<div class="col-centered">
+  <div style="position: fixed; top: 50%; left: 50%; margin-top: -50px; margin-left: -225px;">
+              <a href="javascript:startPlaying();">Click to play!</a>
+              <div id="player"></div>
+          </div>
+  {{#each tweets}}
+  <div class="CardContainer extraBorder">
+
+  <div class="card">
+      <div class="card-body" style="width: 24rem;">
+        <span class="card-title">{{this.UserName}}: {{this.Date}}</span>
+        <p>String: <b>{{this.text}}</b></p>
+        <p>Created By: <b>{{this.UserName}}</b></p>
+        <p>Success : <b>{{this.success}}</b></p>
+        {{#if this.location}}
+        <form action="http://localhost:8080/download" method="POST">
+          <input type="hidden" name="typeScript" value="downloadMid"/>
+          <input type="hidden" name="location" value="{{this.location}}">
+          <button type="submit" formmethod="post">DownloadMid</button>
+        </form>
+        <form action="http://localhost:8080/download" method="POST">
+          <input type="hidden" name="typeScript" value="downloadWav"/>
+          <input type="hidden" name="location" value="{{this.location}}">
+          <button type="submit" formmethod="post">DownloadWav</button>
+        </form>
+        <form action="http://localhost:8080/download" method="POST">
+          <input type="hidden" name="typeScript" value="play"/>
+          <input type="hidden" name="location" value="{{this.location}}">
+          <button type="submit" formmethod="post">play</button>
+        </form>
+        <button onclick="javascript:test('{{this.location}}');">Click to play!</button>
+      {{/if}}
+
+    </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

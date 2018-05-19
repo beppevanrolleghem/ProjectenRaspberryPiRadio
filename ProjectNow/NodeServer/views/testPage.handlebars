@@ -1,0 +1,55 @@
+<style>
+  #wav:after {
+    content: " " attr(download);
+  }
+
+  #wav:not([href]) {
+    display: none;
+  }
+</style>
+<input type="file" id="midi" accept="audio/midi">
+<a id="wav">Download</a>
+<script>
+  var audio;
+  var input = document.getElementById('midi');
+  var anchor = document.getElementById('wav');
+
+  input.addEventListener('change', function change() {
+    // clean up previous song, if any
+    if (anchor.hasAttribute('href')) {
+      URL.revokeObjectURL(anchor.href);
+      anchor.removeAttribute('href');
+
+      if (audio && !audio.paused) {
+        audio.pause();
+      }
+    }
+
+    // check if file exists
+    if (input.files.length > 0) {
+      var reader = new FileReader();
+      var midName = input.files[0].name;
+      var wavName = midName.replace(/\..+?$/, '.wav');
+
+      reader.addEventListener('load', function load(event) {
+        // convert midi arraybuffer to wav blob
+        console.log(event.target.result);
+        var wav = synth.midiToWav(event.target.result).toBlob();
+        // create a temporary URL to the wav file
+        var src = URL.createObjectURL(wav);
+
+        audio = new Audio(src);
+        audio.play();
+
+        anchor.setAttribute('href', src);
+      });
+
+      // read the file as an array buffer
+      console.log(input.files[0]);
+      reader.readAsArrayBuffer(input.files[0]);
+
+      // set the name of the wav file
+      anchor.setAttribute('download', wavName);
+    }
+  });
+</script>

@@ -1,0 +1,94 @@
+/*color*/
+/*
+html {
+	background-color: #e1f5fe;
+}
+
+.nav-wrapper {
+	background-color: #80deea;
+}
+
+.card {
+	background-color: #e8f5e9;
+}
+
+#boxx a, a {
+	color: #00e676;
+}
+
+.card-title {
+	color: black;
+}
+
+.card-content p, li {
+	color: grey;
+}
+
+/*other*/
+/*
+#navbar {
+	position: fixed;
+	z-index: 4;
+}
+
+.brand-logo {
+	max-height: 4.06rem;
+	margin-left: 0.07rem;
+}
+
+#boxx {
+	z-index: 5;
+	position: fixed;
+	right: 0;
+}
+
+#maps {
+	height: 25rem;
+}
+
+iframe {
+	padding: 0.5rem;
+}
+
+#avout {
+	width: 30rem;
+}
+
+#imgtext {
+	width: 14.5rem;
+	text-align: left;
+}
+
+#odisee {
+	max-width: 71rem;
+	min-width: 71rem;
+	float: left;
+}
+
+#odiseetext {
+	margin-top:-0.7rem;
+}
+
+.container{
+	margin:50px;
+}
+
+#contentdiv {
+	padding-top: 4.5rem;
+}
+
+select {
+	visibility: visible;
+}
+*/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+		width: 70%;
+}
+.extraMargin{
+	margin: 2rem;
+}
+.extraBorder{
+	border:2rem;
+}

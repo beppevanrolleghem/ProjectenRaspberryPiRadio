@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "es2015",
+        "traceResolution": false,
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipDefaultLibCheck": true,
+        "declaration": false,
+        "noImplicitAny": true,
+        "noImplicitUseStrict": false,
+        "removeComments": false,
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "noLib": false,
+        "newLine":"LF",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "sourceMap": true,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "int/js",
+        "rootDir": "./"
+    },
+    "exclude": [
+        "node_modules",
+        "frameworks",
+        "sourceArt",
+        "int",
+        "hostdist",
+        "clientdist"
+    ],
+    "typeRoots": [
+        "./node_modules/@types",
+        "./node_modules",
+        "./src/declarations"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    }
+}

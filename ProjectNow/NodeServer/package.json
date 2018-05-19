@@ -1,0 +1,25 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "midi-player-js": "^2.0.3",
+    "midi-player-ts": "^2.0.1-tm2",
+    "mongodb": "^3.1.0-beta4",
+    "node-cmd": "^3.0.0",
+    "python-shell": "^0.5.0",
+    "synth-js": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}

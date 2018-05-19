@@ -1,0 +1,4 @@
+python-twitter==3.4.1
+schedule==0.5.0
+pymongo==2.8
+miditoaudio==0.1.1

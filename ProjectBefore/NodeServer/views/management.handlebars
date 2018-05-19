@@ -1,0 +1,28 @@
+<div class="col-centered">
+  <div class="container">
+    <form action="/management" method="POST">
+      <h4>Interpreter Script</h4>
+      <h6>Arguments/text</h6>
+      <input type="text" name="textArg"/>
+      <h7>Title</h7>
+      <input type="text" name="title" />
+      <select name="scriptType">
+        <option value="Interpreter.py">Interpreter</option>
+        <option value="ClearDb">Clear Database</option>
+        <option value="TwitterGet">
+          TwitterGet
+        </option>
+        <option value="TweetsToMidi">
+          TweetsToMidi
+        </option>
+        <option value="TweetsToDb">
+          TweetsToDb
+        </option>
+        <option value="Iets">
+          iets
+        </option>
+      </select>
+      <button type="submit" formmethod="post">Go</button>
+    </form>
+  </div>
+</div>

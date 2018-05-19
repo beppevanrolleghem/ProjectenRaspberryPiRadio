@@ -1,0 +1,23 @@
+
+
+bassnote:
+Bpm(80)[|:1p1qD#2qp1qBb2qp1qD#2qp1qBb2qp1qD#2qp1qBb2qp1qD#2qp1qB1q|]
+
+BassChords:
+Mi#SibRe#
+"Bpm(80)[|:2D#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tBb2q(F#3Bb3D#3)qD#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tBb2q(F#3Bb3D#3)qD#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tBb2q(F#3Bb3D#3)qD#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tB2q(G#3B3E3)q|]*(3)[|:9(F#3C3)tF#3t(E3F#3)tF#3t|]*(20)[Inst(8)|:3|]*(1)"
+
+hi hats 8th F3#
+[|:9(F#3C3F#4)t(F#3F#4)t(E3F#3F#4)t(F#3F#4)t(C3F#3F#4)t(F#3F#4)t(E3F#3F#4)t(F#3F#4)t|]*(9)
+
+
+
+4e, 3 16e, 4e
+python Interpreter.py "Bpm(80)[|:2D#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tBb2q(F#3Bb3D#3)qD#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tBb2q(F#3Bb3D#3)qD#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tBb2q(F#3Bb3D#3)qD#2q(F#3Bb3D#3)sp1s(F#3Bb3D#3)tB2q(G#3B3E3)q|]*(12)[|:9(F#3C3)tF#3t(E3F#3)tF#3t|]*(96)[Inst(2)|:3p7op1qG#4qBb4sG#4sBb4sp1sEb4qp2q|]*(12)" "fullsong"
+
+Sol# G#
+Sib Bb
+Mib Eb
+[G#q Bbs]
+
+Bpm(80)[Inst(2)|:3p15qG#4qBb4sG#4sBb4sp1sEb4qp1q|]*(1)
